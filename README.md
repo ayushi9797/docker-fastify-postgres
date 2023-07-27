@@ -28,6 +28,11 @@
 
 - ./postman_collection
 
+##  Folder Structure
+
+![image](https://github.com/ayushi9797/docker-fastify-postgres/assets/112810259/87d1ed13-16c9-4a9f-9938-7793e41d29c7)
+
+
 ## REQUIREMENTS
 
 - User can register
@@ -130,6 +135,9 @@
 `select * from users;`
 
 ## Result
+
+![image](https://github.com/ayushi9797/docker-fastify-postgres/assets/112810259/a7d47cc1-386b-4938-8109-a3915e47c038)
+
 
 ```
  id |  name  |         email

@@ -242,3 +242,5 @@
 ## DELETE API
 
 `http://localhost:3000/users/5`
+
+<!-- THANK YOU 😊 -->

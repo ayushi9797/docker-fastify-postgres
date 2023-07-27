@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "9a06096a-d43c-40a8-ad83-79aa1f479a8b",
+		"name": "fastify-docker-postgres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24253063"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"cat\",\r\n\"email\": \"cat1@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/users/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/1",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"ayushii\",\r\n\"email\": \"ayu11@example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/users/4"
+			},
+			"response": []
+		}
+	]
+}

@@ -166,6 +166,9 @@
 
 `./test/task.spec.js`
 
+![image](https://github.com/ayushi9797/docker-fastify-postgres/assets/112810259/e3a9c59e-9cae-4bfb-a78a-d00429ff2640)
+
+
 ## Set up Unit Testing
 
 ### Packages to be install

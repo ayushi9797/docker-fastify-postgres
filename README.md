@@ -28,10 +28,9 @@
 
 - ./postman_collection
 
-##  Folder Structure
+## Folder Structure
 
 ![image](https://github.com/ayushi9797/docker-fastify-postgres/assets/112810259/87d1ed13-16c9-4a9f-9938-7793e41d29c7)
-
 
 ## REQUIREMENTS
 
@@ -138,7 +137,6 @@
 
 ![image](https://github.com/ayushi9797/docker-fastify-postgres/assets/112810259/a7d47cc1-386b-4938-8109-a3915e47c038)
 
-
 ```
  id |  name  |         email
 ----+--------+-----------------------
@@ -161,6 +159,66 @@
 | GET    | /users/:id | This endpoint should allow to get user by specific id                                      | 200         |
 | PUT    | /users/:id | This endpoint should allow to update the details of a specific users identified by its ID. | 200         |
 | DELETE | /users/:id | This endpoint should allow to users to delete details to the system.                       | 200         |
+
+# Unittesting
+
+#### Folder File name
+
+`./test/task.spec.js`
+
+## Set up Unit Testing
+
+### Packages to be install
+
+- `npm install chai`,
+- `npm install mocha`,
+- `npm install chai-http`
+
+### Set up tests
+
+Before running the tests, make sure you have set up the project and installed the required dependencies. The API project should be running and accessible via the server variable in the test files.
+
+### Test Cases
+
+The test suite covers the following test cases:
+
+1. GET /users
+   Test the successful retrieval of all users.
+   Test handling of an invalid URL (404).
+2. GET /users/:id
+   Test the successful retrieval of a specific user by ID.
+   Test handling of an invalid user ID (404).
+3. POST /users
+   Test the successful creation of a new user.
+   Test handling of invalid user data (404).
+4. PATCH /users/:id
+   Test the successful update of user details.
+   Test handling of an invalid request body (404).
+5. DELETE /users/:id
+   Test the successful deletion of a user.
+   Test handling of unsuccessful deletion with an invalid user ID (404).
+
+#### Running the Tests
+
+To run the tests, execute the following steps:
+
+Ensure that the User Management API is running and accessible via the server variable in the test files.
+
+Execute the test files using a test runner like Mocha and chai.
+
+The test runner will execute the test cases defined in the test files and display the results.
+
+## To check the testcases
+
+`npm test`
+
+#### Process using port 8080
+
+` netstat -ano | findstr :8080`
+
+#### Kill the process using the PID (replace '18308' with the actual PID)
+
+`- taskkill /PID 18308 /F`
 
 ### POST API
 
